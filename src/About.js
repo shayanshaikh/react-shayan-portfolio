@@ -45,9 +45,7 @@ class About extends React.Component {
       </MDBRow>
       <MDBRow>
         <MDBCol md="5">
-        <ScrollAnimation animateIn="fadeInUp" animateOnce={true} duration={2}>
           <a onClick={this.startStopAnimation} href="#0"><img src={shayan1} className={`about-img ${this.state.classNames}`} loading="lazy" alt="Shayan's big smile goes here usually..." /></a>
-        </ScrollAnimation>
         </MDBCol>
         <MDBCol md="1">
         </MDBCol>
@@ -55,7 +53,10 @@ class About extends React.Component {
           <div className="about-desc">
           
             <div className="item">
+            <h2 className="title">Hi, I'm<br/>Shayan</h2>
+            {/*}
             <div className="title-row">
+
             <ScrollAnimation animateIn="fadeInDown" animateOnce={true} duration={2}>
               <h2 className="title">Hi</h2>
             </ScrollAnimation>
@@ -89,6 +90,7 @@ class About extends React.Component {
               <h2 className="title">n</h2>
             </ScrollAnimation>
             </div>
+          */}
             </div>
             
             <div className="desc">
@@ -97,11 +99,9 @@ class About extends React.Component {
                 <ScrollAnimation animateIn="fadeInUpBig" animateOnce={true} delay={2500} duration={2}><h2 className="heading">About</h2></ScrollAnimation>
               </div>
               
-              <ScrollAnimation animateIn="fadeInRight" animateOnce={true} delay={3000} duration={2}>
               <p>Let's work together.</p>
               <MDBBtn color="indigo" size="md"href="#contact" >Contact Me!</MDBBtn>
               <MDBBtn color="indigo" size="md" target="_blank" href={resume}>Resume</MDBBtn>
-              </ScrollAnimation>
             </div>
           </div>
         </MDBCol>

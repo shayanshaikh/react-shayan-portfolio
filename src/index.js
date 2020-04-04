@@ -14,7 +14,7 @@ import { Preloader, Placeholder } from 'react-preloading-screen';
 
 ReactDOM.render(
   <React.StrictMode>
-  	<Preloader fadeDuration={3693}>
+  	<Preloader fadeDuration={200}>
     <App />
     <Placeholder>
     <div className="tes">
